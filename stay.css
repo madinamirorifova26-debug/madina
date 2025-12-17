@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding:0; 
+    box-sizing:border-box; 
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+}
+
+body{
+    min-height: 100vh;
+    display:flex; 
+    justify-content:center; 
+    align-items:center;
+    background:linear-gradient(135deg,#cfd9ff,#e7c6ff);
+}
+
+.card{
+    width:380px;
+    background:rgba(255, 255, 255, 0.95);
+    background backdrop-filter: blur(10px): ;
+    border-radius: 20px;
+    padding: 35pw  30px; 
+    box-shadow: 0 25px 60pxrgba(0,0,0,0.25);
+    animation:fadeIn  0.8s ease; 
+}
+
+@keyframes fadeIn {
+    from{opacity:0; transform:translateY(20px)}
+    to{opacity: 1; transform: translateY(0);}
+}
+
+.card h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-box{
+    margin-bottom: 16px;
+}
+
+.input-box label{
+    font-size: 13px;
+    color: #666;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus{
+   border-color: #667eea;
+   box-shadow: 0 0 0 3px  rgba (102,126,234,0.2); 
+}
+
+.gender{
+    display: flex;
+    justify-content:space-between ;
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    margin-top: 15px;
+    color: #555;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(118, 75, 162, 0.4);
+}
+
+.footer-text{
+    text-align: center;
+    margin-top: 18px;
+    font-size: 12px;
+    color: #888;
+}
